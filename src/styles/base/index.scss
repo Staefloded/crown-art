@@ -1,0 +1,63 @@
+// imported in index.js
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "../abstracts/variables.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Button style
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  padding: 1.5rem 4.7rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: $color-white;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.btn-orange {
+  background-image: linear-gradient(to right, #cf5931 0%, #dd7743 50%, #3797b8 50%, #73a2a0 100%);
+  background-size: 200%;
+  transition: all 0.4s ease !important;
+  &:hover {
+    background-position: -100%;
+    color: #fff !important;
+  }
+}
+
+.btn-blue {
+  background-image: linear-gradient(to right, #3797b8 0%, #73a2a0 50%, #cf5931 50%, #dd7743 100%);
+  background-size: 200%;
+  transition: all 0.4s ease !important;
+  &:hover {
+    background-position: -100%;
+    color: #fff !important;
+  }
+}

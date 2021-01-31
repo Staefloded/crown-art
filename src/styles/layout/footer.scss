@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import "../../styles/abstracts/variables.scss";
+
+.footer {
+  background-color: $color-dark-primary;
+  color: #fff;
+  margin-top: 10rem;
+
+  &__container {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  &__top {
+    text-align: center;
+    padding: 10rem 0rem;
+
+    &--headerText {
+      font-family: "Playfair Display", serif;
+      font-size: 4.8rem;
+    }
+
+    &--subHeaderText {
+      font-size: 1.4rem;
+      color: $color-dark-lighter;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    &--form {
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    &--formContainer {
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    &--formField {
+      border: none;
+      outline: none;
+      padding: 1.9rem 3rem;
+      background-color: $color-black;
+      color: $color-dark-light;
+      font-size: 1.2rem;
+      font-family: inherit;
+      font-weight: 600;
+      flex: 1;
+      width: 100%;
+      border-radius: 5rem;
+      box-shadow: 0px 0px 0px 0px $color-red;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 1px $color-red;
+      }
+    }
+
+    &--formSubmit {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__bottom {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10rem;
+
+    &--container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__links {
+    width: 100%;
+
+    &:not(:last-child) {
+      border-right: 0.1px solid $color-dark-lighter;
+    }
+
+    &--body {
+      width: 100%;
+
+      li {
+        padding: 0 2rem;
+      }
+    }
+
+    &--header {
+      font-family: "Playfair Display", serif;
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $color-dark-lighter;
+      transition: color 0.3s ease;
+      font-size: 1.5rem;
+      display: inline-block;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &--address {
+      color: $color-dark-lighter;
+      font-size: 1.5rem;
+      display: inline-block;
+      font-weight: 400;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $color-dark-lighter;
+    padding-bottom: 5rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
